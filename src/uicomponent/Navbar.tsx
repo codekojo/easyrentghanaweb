@@ -1,8 +1,6 @@
-import { Text } from "lucide-react";
 import logo from "../assets/easyrent.png";
-import Privacy from "./PrivacyPolicy";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -10,7 +8,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center py-2">
         <div>
           <Link to="/" className="flex items-center gap-5">
-            <img src={logo} className="rounded-full h-16" resizeMode="cover" />
+            <img src={logo} className="rounded-full h-16" />
             <div className="flex bg-sky-500 rounded-full px-3 py-2 items-center justify-center cursor-pointer">
               Easy Rent Ghana
             </div>
